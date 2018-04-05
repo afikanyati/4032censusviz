@@ -10,7 +10,7 @@
 
 		body {
 			font-size: 9pt;
-			font-family: Consolas, courier;
+			font-family: Muli;
 		}
 
 		text.axis {
@@ -44,12 +44,13 @@
 		}
 		</style>
 		<script src="http://d3js.org/d3.v3.js" type="text/javascript"></script>
+        <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
 		<title></title>
 	</head>
 	<body>
 		<form>
 		  <label><input type="radio" name="mode" value="bypercent" checked> Percent</label>
-		  <label><input type="radio" name="mode" value="bycount"> Number of Respondants</label>
+		  <label><input type="radio" name="mode" value="bycount"> Number of Students</label>
 		</form>
 				
 		<div id="chart"></div>
@@ -67,7 +68,10 @@ var yscale = d3.scale.linear()
 	.rangeRound([height, 0]);
 
 var colors = d3.scale.ordinal()
-	.range(["#63c172", "#ee9952", "#46d6c4", "#fee851", "#98bc9a"]);
+//	.range(["#63c172", "#ee9952", "#46d6c4", "#fee851", "#98bc9a"]);
+//  .range(["#e34e61", "#ff8360", "#534c86", "#2EC4B6", "#C5D86D"]);
+//  .range(["#1E88E5", "#00a679", "#FFBC42", "#D81159", "#8F2D56"]);
+    .range(["#93d3d9", "#d0879e", "#ff8b6e", "#ffd259", "#fdee70"]);
 	
 var xaxis = d3.svg.axis()
 	.scale(xscale)
