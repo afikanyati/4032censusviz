@@ -1,0 +1,50 @@
+/* Stores all CSS variable */
+:root {
+    --dark-gray: #212323;
+    --dark-purple: #190f27;
+    --transluscent-dark-purple: rgba(25, 15, 39, 0.87);
+    --light-purple: #5a4570;
+    --mid-gray: #989898;
+    --light-gray: #dededd;
+    --cream : #dbd7cf;
+    --white: #ffffff;
+    --transluscent-white: rgba(255, 255, 255, 0.8);
+    --body-text-color: rgba(35,31,32, 0.87);
+    --heading-font: "Gill Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --heading-weight: 700;
+    --body-font: ;
+    --body-font-italic: ;
+    --code-font: ;
+}
+
+* {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+}
+
+body {
+
+}
+
+a, a:visited, a:hover {
+	text-decoration: none;
+}
+
+textarea, input {
+	-webkit-transition: border .5s ease-in-out;
+  transition: border .5s ease-in-out;
+}
+
+textarea:focus, input:focus {
+	border-color: none;
+}
+
+textarea:focus, input:focus, button:focus, button {
+    outline: blue;
+}
+
+button {
+	border: none;
+}
