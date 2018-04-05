@@ -48,3 +48,12 @@ textarea:focus, input:focus, button:focus, button {
 button {
 	border: none;
 }
+
+.arc text {
+  font: 10px sans-serif;
+/*    color: #ffffff;*/
+  text-anchor: middle;
+}
+.arc path {
+  stroke: #fff;
+}
