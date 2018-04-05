@@ -1,48 +1,12 @@
-// Script 3
+<html>
+<head></head>
+<body>
 
+<div id="pieChart"></div>
 
-//var svg = d3.select("svg"),
-//    width = +svg.attr("width"),
-//    height = +svg.attr("height"),
-//    radius = Math.min(width, height) / 2,
-//    g = svg.append("g").attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
-//
-//var color = d3.scaleOrdinal(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]);
-//
-//var pie = d3.pie()
-//    .sort(null)
-//    .value(function(d) { return d.number; });
-//
-//var path = d3.arc()
-//    .outerRadius(radius - 10)
-//    .innerRadius(0);
-//
-//var label = d3.arc()
-//    .outerRadius(radius - 60)
-//    .innerRadius(radius - 60);
-//
-//d3.csv("../data/pienationdata.csv", function(d) {
-//    d.number = +d.number;
-//    return d;
-//}, function(error, data) {
-//    if (error) throw error;
-//
-//    var arc = g.selectAll(".arc")
-//    .data(pie(data))
-//    .enter().append("g")
-//    .attr("class", "arc");
-//
-//    arc.append("path")
-//      .attr("d", path)
-//      .attr("fill", function(d) { return color(d.data.year); });
-//
-//    arc.append("text")
-//      .attr("transform", function(d) { return "translate(" + label.centroid(d) + ")"; })
-//      .attr("dy", "0.35em")
-//      .text(function(d) { return d.data.year; });
-//});
-
-
+<script src="//cdnjs.cloudflare.com/ajax/libs/d3/4.7.2/d3.min.js"></script>
+<script src="d3pie.min.js"></script>
+<script>
 var pie = new d3pie("pieChart", {
 	"header": {
 		"title": {
@@ -135,13 +99,14 @@ var pie = new d3pie("pieChart", {
 		}
 	},
 	"effects": {
-        "load": {
-            "effect": "none"
-        },
 		"pullOutSegmentOnClick": {
-			"effect": "none",
+			"effect": "linear",
 			"speed": 400,
 			"size": 8
 		}
 	}
 });
+</script>
+
+</body>
+</html>
