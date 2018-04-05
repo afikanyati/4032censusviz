@@ -1,233 +1,805 @@
 {
-    "name":"us",
-    "children":[
+  "name": "us",
+  "children": [
+    {
+      "name": "Northeast",
+      "children": [
         {
-            "name":"Northeast",
-            "children":[
-                {
-                    "name":"Connecticut",
-                    "size":873354
-                },
-                {
-                    "name":"Maine",
-                    "size":280766
-                },
-                {
-                    "name":"Massachusetts",
-                    "size":1637272
-                },
-                {
-                    "name":"New Hampshire",
-                    "size":298247
-                },
-                {
-                    "name":"New Jersey",
-                    "size":2097288
-                },
-                {
-                    "name":"New York",
-                    "size":4624432
-                },
-                {
-                    "name":"Pennsylvania",
-                    "size":2846179
-                },
-                {
-                    "name":"Rhode Island",
-                    "size":252662
-                },
-                {
-                    "name":"Vermont",
-                    "size":140587
-                }
-            ]
+          "name": "Connecticut",
+          "Percent k12": 61.9,
+          "Total College": 276038,
+          "Percent College": 29.6,
+          "Total College - Male": 120175,
+          "Percent College - Male": 26.3,
+          "Total College - Female": 155863,
+          "Percent College - Female": 32.8,
+          "Total Public College": 170794,
+          "Percent Public College": 61.9,
+          "Total Private College": 105244,
+          "Percent Private College": 38.1,
+          "Population": ""
         },
         {
-            "name":"Midwest",
-            "children":[
-                {
-                    "name":"Illinois",
-                    "size":3152893
-                },
-                {
-                    "name":"Indiana",
-                    "size":1617951
-                },
-                {
-                    "name":"Iowa",
-                    "size":755343
-                },
-                {
-                    "name":"Kansas",
-                    "size":739112
-                },
-                {
-                    "name":"Michigan",
-                    "size":2419519
-                },
-                {
-                    "name":"Minnesota",
-                    "size":1307802
-                },
-                {
-                    "name":"Missouri",
-                    "size":1435329
-                },
-                {
-                    "name":"Nebraska",
-                    "size":475344
-                },
-                {
-                    "name":"North Dakota",
-                    "size":170430
-                },
-                {
-                    "name":"Ohio",
-                    "size":2744175
-                },
-                {
-                    "name":"South Dakota",
-                    "size":203059
-                },
-                {
-                    "name":"Wisconsin",
-                    "size":1385697
-                }
-            ]
+          "name": "Maine",
+          "Percent k12": 71,
+          "Total College": 84942,
+          "Percent College": 28.6,
+          "Total College - Male": 35528,
+          "Percent College - Male": 24.5,
+          "Total College - Female": 49414,
+          "Percent College - Female": 32.5,
+          "Total Public College": 60278,
+          "Percent Public College": 71,
+          "Total Private College": 24664,
+          "Percent Private College": 29,
+          "Population": ""
         },
         {
-            "name":"South",
-            "children":[
-                {
-                    "name":"Alabama",
-                    "size":1127406
-                },
-                {
-                    "name":"Arkansas",
-                    "size":696109
-                },
-                {
-                    "name":"Delaware",
-                    "size":218167
-                },
-                {
-                    "name":"District of Columbia",
-                    "size":150186
-                },
-                {
-                    "name":"Florida",
-                    "size":4395692
-                },
-                {
-                    "name":"Georgia",
-                    "size":2587306
-                },
-                {
-                    "name":"Kentucky",
-                    "size":1023325
-                },
-                {
-                    "name":"Louisiana",
-                    "size":1094749
-                },
-                {
-                    "name":"Maryland",
-                    "size":1465691
-                },
-                {
-                    "name":"Mississippi",
-                    "size":753550
-                },
-                {
-                    "name":"North Carolina",
-                    "size":2391705
-                },
-                {
-                    "name":"Oklahoma",
-                    "size":932746
-                },
-                {
-                    "name":"South Carolina",
-                    "size":1137662
-                },
-                {
-                    "name":"Tennessee",
-                    "size":1495553
-                },
-                {
-                    "name":"Texas",
-                    "size":7030453
-                },
-                {
-                    "name":"Virginia",
-                    "size":2028046
-                },
-                {
-                    "name":"West Virginia",
-                    "size":382975
-                },
-                {
-                    "name":"Puerto Rico",
-                    "size":852864
-                }
-            ]
+          "name": "Massachusetts",
+          "Percent k12": 49.1,
+          "Total College": 595219,
+          "Percent College": 34,
+          "Total College - Male": 261793,
+          "Percent College - Male": 30.7,
+          "Total College - Female": 333426,
+          "Percent College - Female": 37.3,
+          "Total Public College": 292430,
+          "Percent Public College": 49.1,
+          "Total Private College": 302789,
+          "Percent Private College": 50.9,
+          "Population": ""
         },
         {
-            "name":"West",
-            "children":[
-                {
-                    "name":"Alaska",
-                    "size":181579
-                },
-                {
-                    "name":"Arizona",
-                    "size":1667173
-                },
-                {
-                    "name":"California",
-                    "size":9957953
-                },
-                {
-                    "name":"Colorado",
-                    "size":1308159
-                },
-                {
-                    "name":"Hawaii",
-                    "size":312195
-                },
-                {
-                    "name":"Idaho",
-                    "size":424191
-                },
-                {
-                    "name":"Montana",
-                    "size":222925
-                },
-                {
-                    "name":"Nevada",
-                    "size":658699
-                },
-                {
-                    "name":"New Mexico",
-                    "size":528761
-                },
-                {
-                    "name":"Oregon",
-                    "size":905237
-                },
-                {
-                    "name":"Utah",
-                    "size":891770
-                },
-                {
-                    "name":"Washington",
-                    "size":1621102
-                },
-                {
-                    "name":"Wyoming",
-                    "size":140041
-                }
-            ]
+          "name": "New Hampshire",
+          "Percent k12": 60.9,
+          "Total College": 94431,
+          "Percent College": 29.8,
+          "Total College - Male": 40888,
+          "Percent College - Male": 26.5,
+          "Total College - Female": 53543,
+          "Percent College - Female": 33,
+          "Total Public College": 57532,
+          "Percent Public College": 60.9,
+          "Total Private College": 36899,
+          "Percent Private College": 39.1,
+          "Population": ""
+        },
+        {
+          "name": "New Jersey",
+          "Percent k12": 69.9,
+          "Total College": 602816,
+          "Percent College": 26.6,
+          "Total College - Male": 273611,
+          "Percent College - Male": 24.3,
+          "Total College - Female": 329205,
+          "Percent College - Female": 28.9,
+          "Total Public College": 421487,
+          "Percent Public College": 69.9,
+          "Total Private College": 181329,
+          "Percent Private College": 30.1,
+          "Population": ""
+        },
+        {
+          "name": "New York",
+          "Percent k12": 60,
+          "Total College": 1524266,
+          "Percent College": 30.9,
+          "Total College - Male": 678765,
+          "Percent College - Male": 28,
+          "Total College - Female": 845501,
+          "Percent College - Female": 33.8,
+          "Total Public College": 914070,
+          "Percent Public College": 60,
+          "Total Private College": 610196,
+          "Percent Private College": 40,
+          "Population": ""
+        },
+        {
+          "name": "Pennsylvania",
+          "Percent k12": 59.8,
+          "Total College": 867386,
+          "Percent College": 28.6,
+          "Total College - Male": 381906,
+          "Percent College - Male": 25.5,
+          "Total College - Female": 485480,
+          "Percent College - Female": 31.6,
+          "Total Public College": 518477,
+          "Percent Public College": 59.8,
+          "Total Private College": 348909,
+          "Percent Private College": 40.2,
+          "Population": ""
+        },
+        {
+          "name": "Rhode Island",
+          "Percent k12": 54.6,
+          "Total College": 95998,
+          "Percent College": 36,
+          "Total College - Male": 42494,
+          "Percent College - Male": 32.6,
+          "Total College - Female": 53504,
+          "Percent College - Female": 39.1,
+          "Total Public College": 52420,
+          "Percent Public College": 54.6,
+          "Total Private College": 43578,
+          "Percent Private College": 45.4,
+          "Population": ""
+        },
+        {
+          "name": "Vermont",
+          "Percent k12": 61,
+          "Total College": 48577,
+          "Percent College": 32.5,
+          "Total College - Male": 21851,
+          "Percent College - Male": 29.7,
+          "Total College - Female": 26726,
+          "Percent College - Female": 35.3,
+          "Total Public College": 29618,
+          "Percent Public College": 61,
+          "Total Private College": 18959,
+          "Percent Private College": 39,
+          "Population": ""
         }
-    ]
+      ]
+    },
+    {
+      "name": "Midwest",
+      "children": [
+        {
+          "name": "Illinois",
+          "Percent k12": 67.9,
+          "Total College": 940169,
+          "Percent College": 27.8,
+          "Total College - Male": 420528,
+          "Percent College - Male": 25.2,
+          "Total College - Female": 519641,
+          "Percent College - Female": 30.3,
+          "Total Public College": 638564,
+          "Percent Public College": 67.9,
+          "Total Private College": 301605,
+          "Percent Private College": 32.1,
+          "Population": ""
+        },
+        {
+          "name": "Indiana",
+          "Percent k12": 77.9,
+          "Total College": 457771,
+          "Percent College": 26.6,
+          "Total College - Male": 202623,
+          "Percent College - Male": 23.9,
+          "Total College - Female": 255148,
+          "Percent College - Female": 29.4,
+          "Total Public College": 356761,
+          "Percent Public College": 77.9,
+          "Total Private College": 101010,
+          "Percent Private College": 22.1,
+          "Population": ""
+        },
+        {
+          "name": "Iowa",
+          "Percent k12": 73.1,
+          "Total College": 229125,
+          "Percent College": 28.3,
+          "Total College - Male": 104615,
+          "Percent College - Male": 25.9,
+          "Total College - Female": 124510,
+          "Percent College - Female": 30.6,
+          "Total Public College": 167523,
+          "Percent Public College": 73.1,
+          "Total Private College": 61602,
+          "Percent Private College": 26.9,
+          "Population": ""
+        },
+        {
+          "name": "Kansas",
+          "Percent k12": 84.4,
+          "Total College": 217571,
+          "Percent College": 27.5,
+          "Total College - Male": 100207,
+          "Percent College - Male": 25.5,
+          "Total College - Female": 117364,
+          "Percent College - Female": 29.6,
+          "Total Public College": 183728,
+          "Percent Public College": 84.4,
+          "Total Private College": 33843,
+          "Percent Private College": 15.6,
+          "Population": ""
+        },
+        {
+          "name": "Michigan",
+          "Percent k12": 83.7,
+          "Total College": 755373,
+          "Percent College": 29.5,
+          "Total College - Male": 338301,
+          "Percent College - Male": 26.7,
+          "Total College - Female": 417072,
+          "Percent College - Female": 32.2,
+          "Total Public College": 632201,
+          "Percent Public College": 83.7,
+          "Total Private College": 123172,
+          "Percent Private College": 16.3,
+          "Population": ""
+        },
+        {
+          "name": "Minnesota",
+          "Percent k12": 73.2,
+          "Total College": 375073,
+          "Percent College": 26.8,
+          "Total College - Male": 166207,
+          "Percent College - Male": 24,
+          "Total College - Female": 208866,
+          "Percent College - Female": 29.5,
+          "Total Public College": 274688,
+          "Percent Public College": 73.2,
+          "Total Private College": 100385,
+          "Percent Private College": 26.8,
+          "Population": ""
+        },
+        {
+          "name": "Missouri",
+          "Percent k12": 71.7,
+          "Total College": 419987,
+          "Percent College": 27.5,
+          "Total College - Male": 183391,
+          "Percent College - Male": 24.3,
+          "Total College - Female": 236596,
+          "Percent College - Female": 30.5,
+          "Total Public College": 301267,
+          "Percent Public College": 71.7,
+          "Total Private College": 118720,
+          "Percent Private College": 28.3,
+          "Population": ""
+        },
+        {
+          "name": "Nebraska",
+          "Percent k12": 78.7,
+          "Total College": 141130,
+          "Percent College": 27.8,
+          "Total College - Male": 62486,
+          "Percent College - Male": 24.8,
+          "Total College - Female": 78644,
+          "Percent College - Female": 30.6,
+          "Total Public College": 111003,
+          "Percent Public College": 78.7,
+          "Total Private College": 30127,
+          "Percent Private College": 21.3,
+          "Population": ""
+        },
+        {
+          "name": "North Dakota",
+          "Percent k12": 87.7,
+          "Total College": 57689,
+          "Percent College": 31.8,
+          "Total College - Male": 27643,
+          "Percent College - Male": 30.2,
+          "Total College - Female": 30046,
+          "Percent College - Female": 33.4,
+          "Total Public College": 50570,
+          "Percent Public College": 87.7,
+          "Total Private College": 7119,
+          "Percent Private College": 12.3,
+          "Population": ""
+        },
+        {
+          "name": "Ohio",
+          "Percent k12": 75.3,
+          "Total College": 800379,
+          "Percent College": 27.4,
+          "Total College - Male": 349428,
+          "Percent College - Male": 24.3,
+          "Total College - Female": 450951,
+          "Percent College - Female": 30.4,
+          "Total Public College": 602915,
+          "Percent Public College": 75.3,
+          "Total Private College": 197464,
+          "Percent Private College": 24.7,
+          "Population": ""
+        },
+        {
+          "name": "South Dakota",
+          "Percent k12": 82.6,
+          "Total College": 56103,
+          "Percent College": 25.8,
+          "Total College - Male": 25125,
+          "Percent College - Male": 23.2,
+          "Total College - Female": 30978,
+          "Percent College - Female": 28.5,
+          "Total Public College": 46343,
+          "Percent Public College": 82.6,
+          "Total Private College": 9760,
+          "Percent Private College": 17.4,
+          "Population": ""
+        },
+        {
+          "name": "Wisconsin",
+          "Percent k12": 77.9,
+          "Total College": 410713,
+          "Percent College": 28.1,
+          "Total College - Male": 179727,
+          "Percent College - Male": 25,
+          "Total College - Female": 230986,
+          "Percent College - Female": 31.1,
+          "Total Public College": 320041,
+          "Percent Public College": 77.9,
+          "Total Private College": 90672,
+          "Percent Private College": 22.1,
+          "Population": ""
+        }
+      ]
+    },
+    {
+      "name": "South",
+      "children": [
+        {
+          "name": "Alabama",
+          "Percent k12": 84.4,
+          "Total College": 314256,
+          "Percent College": 26.3,
+          "Total College - Male": 135184,
+          "Percent College - Male": 23.1,
+          "Total College - Female": 179072,
+          "Percent College - Female": 29.5,
+          "Total Public College": 265178,
+          "Percent Public College": 84.4,
+          "Total Private College": 49078,
+          "Percent Private College": 15.6,
+          "Population": ""
+        },
+        {
+          "name": "Arkansas",
+          "Percent k12": 84.6,
+          "Total College": 189768,
+          "Percent College": 25.4,
+          "Total College - Male": 81388,
+          "Percent College - Male": 22.2,
+          "Total College - Female": 108380,
+          "Percent College - Female": 28.6,
+          "Total Public College": 160603,
+          "Percent Public College": 84.6,
+          "Total Private College": 29165,
+          "Percent Private College": 15.4,
+          "Population": ""
+        },
+        {
+          "name": "Delaware",
+          "Percent k12": 76.9,
+          "Total College": 69186,
+          "Percent College": 29.7,
+          "Total College - Male": 28798,
+          "Percent College - Male": 25.8,
+          "Total College - Female": 40388,
+          "Percent College - Female": 33.4,
+          "Total Public College": 53213,
+          "Percent Public College": 76.9,
+          "Total Private College": 15973,
+          "Percent Private College": 23.1,
+          "Population": ""
+        },
+        {
+          "name": "District of Columbia",
+          "Percent k12": 26.6,
+          "Total College": 74846,
+          "Percent College": 45.4,
+          "Total College - Male": 31482,
+          "Percent College - Male": 40.8,
+          "Total College - Female": 43364,
+          "Percent College - Female": 49.6,
+          "Total Public College": 19937,
+          "Percent Public College": 26.6,
+          "Total Private College": 54909,
+          "Percent Private College": 73.4,
+          "Population": ""
+        },
+        {
+          "name": "Florida",
+          "Percent k12": 75.6,
+          "Total College": 1383794,
+          "Percent College": 29.6,
+          "Total College - Male": 608046,
+          "Percent College - Male": 26.4,
+          "Total College - Female": 775748,
+          "Percent College - Female": 32.6,
+          "Total Public College": 1045919,
+          "Percent Public College": 75.6,
+          "Total Private College": 337875,
+          "Percent Private College": 24.4,
+          "Population": ""
+        },
+        {
+          "name": "Georgia",
+          "Percent k12": 78,
+          "Total College": 736681,
+          "Percent College": 26.6,
+          "Total College - Male": 309301,
+          "Percent College - Male": 23,
+          "Total College - Female": 427380,
+          "Percent College - Female": 30.1,
+          "Total Public College": 574289,
+          "Percent Public College": 78,
+          "Total Private College": 162392,
+          "Percent Private College": 22,
+          "Population": ""
+        },
+        {
+          "name": "Kentucky",
+          "Percent k12": 80.6,
+          "Total College": 284400,
+          "Percent College": 26.2,
+          "Total College - Male": 120236,
+          "Percent College - Male": 22.6,
+          "Total College - Female": 164164,
+          "Percent College - Female": 29.7,
+          "Total Public College": 229207,
+          "Percent Public College": 80.6,
+          "Total Private College": 55193,
+          "Percent Private College": 19.4,
+          "Population": ""
+        },
+        {
+          "name": "Louisiana",
+          "Percent k12": 79.9,
+          "Total College": 287405,
+          "Percent College": 24.4,
+          "Total College - Male": 119066,
+          "Percent College - Male": 20.8,
+          "Total College - Female": 168339,
+          "Percent College - Female": 27.8,
+          "Total Public College": 229648,
+          "Percent Public College": 79.9,
+          "Total Private College": 57757,
+          "Percent Private College": 20.1,
+          "Population": ""
+        },
+        {
+          "name": "Maryland",
+          "Percent k12": 76.3,
+          "Total College": 490257,
+          "Percent College": 31.3,
+          "Total College - Male": 215466,
+          "Percent College - Male": 28.2,
+          "Total College - Female": 274791,
+          "Percent College - Female": 34.4,
+          "Total Public College": 374071,
+          "Percent Public College": 76.3,
+          "Total Private College": 116186,
+          "Percent Private College": 23.7,
+          "Population": ""
+        },
+        {
+          "name": "Mississippi",
+          "Percent k12": 86.8,
+          "Total College": 209543,
+          "Percent College": 26.1,
+          "Total College - Male": 85369,
+          "Percent College - Male": 22,
+          "Total College - Female": 124174,
+          "Percent College - Female": 30,
+          "Total Public College": 181861,
+          "Percent Public College": 86.8,
+          "Total Private College": 27682,
+          "Percent Private College": 13.2,
+          "Population": ""
+        },
+        {
+          "name": "North Carolina",
+          "Percent k12": 79.3,
+          "Total College": 712341,
+          "Percent College": 28.1,
+          "Total College - Male": 300087,
+          "Percent College - Male": 24.3,
+          "Total College - Female": 412254,
+          "Percent College - Female": 31.7,
+          "Total Public College": 564933,
+          "Percent Public College": 79.3,
+          "Total Private College": 147408,
+          "Percent Private College": 20.7,
+          "Population": ""
+        },
+        {
+          "name": "Oklahoma",
+          "Percent k12": 83.5,
+          "Total College": 249095,
+          "Percent College": 24.9,
+          "Total College - Male": 111463,
+          "Percent College - Male": 22.5,
+          "Total College - Female": 137632,
+          "Percent College - Female": 27.3,
+          "Total Public College": 208051,
+          "Percent Public College": 83.5,
+          "Total Private College": 41044,
+          "Percent Private College": 16.5,
+          "Population": ""
+        },
+        {
+          "name": "South Carolina",
+          "Percent k12": 78.4,
+          "Total College": 329371,
+          "Percent College": 27.4,
+          "Total College - Male": 140542,
+          "Percent College - Male": 23.9,
+          "Total College - Female": 188829,
+          "Percent College - Female": 30.7,
+          "Total Public College": 258154,
+          "Percent Public College": 78.4,
+          "Total Private College": 71217,
+          "Percent Private College": 21.6,
+          "Population": ""
+        },
+        {
+          "name": "Tennessee",
+          "Percent k12": 73.5,
+          "Total College": 411048,
+          "Percent College": 25.9,
+          "Total College - Male": 179270,
+          "Percent College - Male": 23,
+          "Total College - Female": 231778,
+          "Percent College - Female": 28.8,
+          "Total Public College": 302146,
+          "Percent Public College": 73.5,
+          "Total Private College": 108902,
+          "Percent Private College": 26.5,
+          "Population": ""
+        },
+        {
+          "name": "Texas",
+          "Percent k12": 82.9,
+          "Total College": 1844792,
+          "Percent College": 24.6,
+          "Total College - Male": 828947,
+          "Percent College - Male": 22.3,
+          "Total College - Female": 1015845,
+          "Percent College - Female": 26.9,
+          "Total Public College": 1528884,
+          "Percent Public College": 82.9,
+          "Total Private College": 315908,
+          "Percent Private College": 17.1,
+          "Population": ""
+        },
+        {
+          "name": "Virginia",
+          "Percent k12": 75.9,
+          "Total College": 664546,
+          "Percent College": 30.8,
+          "Total College - Male": 304232,
+          "Percent College - Male": 28.4,
+          "Total College - Female": 360314,
+          "Percent College - Female": 33.2,
+          "Total Public College": 504597,
+          "Percent Public College": 75.9,
+          "Total Private College": 159949,
+          "Percent Private College": 24.1,
+          "Population": ""
+        },
+        {
+          "name": "West Virginia",
+          "Percent k12": 84.2,
+          "Total College": 108443,
+          "Percent College": 26.8,
+          "Total College - Male": 46968,
+          "Percent College - Male": 23.6,
+          "Total College - Female": 61475,
+          "Percent College - Female": 29.8,
+          "Total Public College": 91289,
+          "Percent Public College": 84.2,
+          "Total Private College": 17154,
+          "Percent Private College": 15.8,
+          "Population": ""
+        },
+        {
+          "name": "Puerto Rico",
+          "Percent k12": 38.5,
+          "Total College": 267588,
+          "Percent College": 29.5,
+          "Total College - Male": 116186,
+          "Percent College - Male": 26.2,
+          "Total College - Female": 151402,
+          "Percent College - Female": 32.7,
+          "Total Public College": 103037,
+          "Percent Public College": 38.5,
+          "Total Private College": 164551,
+          "Percent Private College": 61.5,
+          "Population": ""
+        }
+      ]
+    },
+    {
+      "name": "West",
+      "children": [
+        {
+          "name": "Alaska",
+          "Percent k12": 83.3,
+          "Total College": 49185,
+          "Percent College": 25.6,
+          "Total College - Male": 23190,
+          "Percent College - Male": 23.8,
+          "Total College - Female": 25995,
+          "Percent College - Female": 27.5,
+          "Total Public College": 40993,
+          "Percent Public College": 83.3,
+          "Total Private College": 8192,
+          "Percent Private College": 16.7,
+          "Population": ""
+        },
+        {
+          "name": "Arizona",
+          "Percent k12": 83.6,
+          "Total College": 479129,
+          "Percent College": 27.4,
+          "Total College - Male": 221016,
+          "Percent College - Male": 25.3,
+          "Total College - Female": 258113,
+          "Percent College - Female": 29.4,
+          "Total Public College": 400338,
+          "Percent Public College": 83.6,
+          "Total Private College": 78791,
+          "Percent Private College": 16.4,
+          "Population": ""
+        },
+        {
+          "name": "California",
+          "Percent k12": 79.5,
+          "Total College": 3217233,
+          "Percent College": 30.5,
+          "Total College - Male": 1491742,
+          "Percent College - Male": 28.4,
+          "Total College - Female": 1725491,
+          "Percent College - Female": 32.6,
+          "Total Public College": 2556187,
+          "Percent Public College": 79.5,
+          "Total Private College": 661046,
+          "Percent Private College": 20.5,
+          "Population": ""
+        },
+        {
+          "name": "Colorado",
+          "Percent k12": 81.2,
+          "Total College": 397073,
+          "Percent College": 28.5,
+          "Total College - Male": 184889,
+          "Percent College - Male": 26.6,
+          "Total College - Female": 212184,
+          "Percent College - Female": 30.4,
+          "Total Public College": 322268,
+          "Percent Public College": 81.2,
+          "Total Private College": 74805,
+          "Percent Private College": 18.8,
+          "Population": ""
+        },
+        {
+          "name": "Hawaii",
+          "Percent k12": 75.6,
+          "Total College": 99455,
+          "Percent College": 29.8,
+          "Total College - Male": 47173,
+          "Percent College - Male": 28.2,
+          "Total College - Female": 52282,
+          "Percent College - Female": 31.4,
+          "Total Public College": 75152,
+          "Percent Public College": 75.6,
+          "Total Private College": 24303,
+          "Percent Private College": 24.4,
+          "Population": ""
+        },
+        {
+          "name": "Idaho",
+          "Percent k12": 77,
+          "Total College": 111715,
+          "Percent College": 25.1,
+          "Total College - Male": 51252,
+          "Percent College - Male": 22.9,
+          "Total College - Female": 60463,
+          "Percent College - Female": 27.2,
+          "Total Public College": 86025,
+          "Percent Public College": 77,
+          "Total Private College": 25690,
+          "Percent Private College": 23,
+          "Population": ""
+        },
+        {
+          "name": "Montana",
+          "Percent k12": 87.3,
+          "Total College": 61607,
+          "Percent College": 26.1,
+          "Total College - Male": 27788,
+          "Percent College - Male": 23.6,
+          "Total College - Female": 33819,
+          "Percent College - Female": 28.5,
+          "Total Public College": 53806,
+          "Percent Public College": 87.3,
+          "Total Private College": 7801,
+          "Percent Private College": 12.7,
+          "Population": ""
+        },
+        {
+          "name": "Nevada",
+          "Percent k12": 81.9,
+          "Total College": 169585,
+          "Percent College": 24.6,
+          "Total College - Male": 75452,
+          "Percent College - Male": 22,
+          "Total College - Female": 94133,
+          "Percent College - Female": 27.1,
+          "Total Public College": 138961,
+          "Percent Public College": 81.9,
+          "Total Private College": 30624,
+          "Percent Private College": 18.1,
+          "Population": ""
+        },
+        {
+          "name": "New Mexico",
+          "Percent k12": 88.4,
+          "Total College": 158353,
+          "Percent College": 28.4,
+          "Total College - Male": 69350,
+          "Percent College - Male": 25.4,
+          "Total College - Female": 89003,
+          "Percent College - Female": 31.3,
+          "Total Public College": 139910,
+          "Percent Public College": 88.4,
+          "Total Private College": 18443,
+          "Percent Private College": 11.6,
+          "Population": ""
+        },
+        {
+          "name": "Oregon",
+          "Percent k12": 80.8,
+          "Total College": 281758,
+          "Percent College": 29.3,
+          "Total College - Male": 126567,
+          "Percent College - Male": 26.6,
+          "Total College - Female": 155191,
+          "Percent College - Female": 32,
+          "Total Public College": 227530,
+          "Percent Public College": 80.8,
+          "Total Private College": 54228,
+          "Percent Private College": 19.2,
+          "Population": ""
+        },
+        {
+          "name": "Utah",
+          "Percent k12": 73.1,
+          "Total College": 246822,
+          "Percent College": 25.9,
+          "Total College - Male": 125593,
+          "Percent College - Male": 25.6,
+          "Total College - Female": 121229,
+          "Percent College - Female": 26.3,
+          "Total Public College": 180460,
+          "Percent Public College": 73.1,
+          "Total Private College": 66362,
+          "Percent Private College": 26.9,
+          "Population": ""
+        },
+        {
+          "name": "Washington",
+          "Percent k12": 79.9,
+          "Total College": 466578,
+          "Percent College": 27.1,
+          "Total College - Male": 214812,
+          "Percent College - Male": 24.9,
+          "Total College - Female": 251766,
+          "Percent College - Female": 29.2,
+          "Total Public College": 372798,
+          "Percent Public College": 79.9,
+          "Total Private College": 93780,
+          "Percent Private College": 20.1,
+          "Population": ""
+        },
+        {
+          "name": "Wyoming",
+          "Percent k12": 89.9,
+          "Total College": 40226,
+          "Percent College": 26.9,
+          "Total College - Male": 18115,
+          "Percent College - Male": 24,
+          "Total College - Female": 22111,
+          "Percent College - Female": 29.9,
+          "Total Public College": 36168,
+          "Percent Public College": 89.9,
+          "Total Private College": 4058,
+          "Percent Private College": 10.1,
+          "Population": ""
+        }
+      ]
+    }
+  ]
 }

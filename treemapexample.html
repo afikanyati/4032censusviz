@@ -13,7 +13,7 @@ svg {
 <svg width="960" height="570"></svg>
 <form>
   <label><input type="radio" name="mode" value="sumBySize" checked> Size</label>
-  <label><input type="radio" name="mode" value="sumByCount"> Count</label>
+  <label><input type="radio" name="mode" value="sumByCount"> Percent</label>
 </form>
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script>
@@ -23,7 +23,7 @@ var svg = d3.select("svg"),
     height = +svg.attr("height");
 
 var fader = function(color) { return d3.interpolateRgb(color, "#fff")(0.2); },
-    color = d3.scaleOrdinal(d3.schemeCategory20.map(fader)),
+    color = d3.scaleOrdinal(d3.schemeCategory10.map(fader)),
     format = d3.format(",d");
 
 var treemap = d3.treemap()
@@ -32,7 +32,7 @@ var treemap = d3.treemap()
     .round(true)
     .paddingInner(1);
 
-d3.json("flare.json", function(error, data) {
+d3.json("data/us.json", function(error, data) {
   if (error) throw error;
 
   var root = d3.hierarchy(data)
@@ -95,11 +95,11 @@ d3.json("flare.json", function(error, data) {
 });
 
 function sumByCount(d) {
-  return d.children ? 0 : 1;
+  return dd["Total College"];
 }
 
 function sumBySize(d) {
-  return d.size;
+  return d["Total College"];
 }
 
 </script>
