@@ -2,8 +2,8 @@
 // Data Visualization II - Treemap
 
 var treemapSVG = d3.select("#treemap"),
-    width = +treemapSVG.attr("width"),
-    height = +treemapSVG.attr("height");
+    width = Math.min(+treemapSVG.attr("width"), window.innerWidth*.9),
+    height = Math.min(+treemapSVG.attr("height"), window.innerHeight*.9);
 
 var fader = function(color) { return d3.interpolateRgb(color, "#fff")(0.2); },
     color = d3.scaleOrdinal().range(["#98abc5", "#f68b1e", "#a05d56", "#6b486b"]),
