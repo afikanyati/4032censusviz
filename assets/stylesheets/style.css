@@ -25,7 +25,8 @@
 }
 
 body {
-
+    font-size: 14px;
+    font-family: "Muli", "Gill Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 a, a:visited, a:hover {
@@ -63,13 +64,9 @@ rect.bordered {
     stroke-width: 2px;
 }
 
-body {
-    font-size: 9pt;
-    font-family: Muli;
-}
-
 text.axis {
     fill: #000;
+    font-family:
 }
 
 .axis path,
@@ -96,11 +93,6 @@ form {
     position: absolute;
     right: 10px;
     top: 10px;
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
-    color: #333333;
 }
 
 /* Add shadow effect to chart. If you don't like it, get rid of it. */
@@ -131,37 +123,47 @@ polyline{
 
 #pie-chart {
     display: block;
-    margin: 0 auto;  
+    margin: 0 auto;
 }
 
 #treemap {
     display: block;
-    margin: 0 auto;  
+    margin: 0 auto;
 }
 
 #stacked-bar-chart {
     display: block;
-    margin: 0 auto; 
+    margin: 0 auto;
 /*    padding-left: 136px;*/
 }
 
 .paragraph {
     width: 800px;
     display: block;
-    margin: 0 auto;  
+    margin: 0 auto;
     font-size: 1.25em;
+    font-weight: 400;
+    line-height: 1.5em;
+    color: rgba(0, 0, 0, 0.87);
+    margin-bottom: 20px;
 }
 
 .title {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin: 60px 0 0 0;
 }
 
 .subtitle{
     text-align: center;
     font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin: 50px 0 30px 0;
 }
 
-.text{
+.personnel {
     text-align: center;
+    margin: 30px 0;
+    margin-bottom: 60px;
 }

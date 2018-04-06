@@ -57,7 +57,6 @@ d3.json("assets/data/us.json", function(error, data) {
       .data([sumBySize, sumByCount], function(d) { return d ? d.name : this.value; })
       .on("change", changed);
 
-  
   function changed(sum) {
     timeout.stop();
 
