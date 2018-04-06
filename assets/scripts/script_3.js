@@ -1,95 +1,36 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
-<html>
-	<head>
-		<meta charset="utf-8">
-		<style type="text/css">
-		rect.bordered {
-			stroke: #E6E6E6;
-			stroke-width: 2px;
-		}
-
-		body {
-			font-size: 9pt;
-			font-family: Muli;
-		}
-
-		text.axis {
-			fill: #000;
-		}
-
-		.axis path,
-		.axis line {
-			fill: none;
-			stroke: #000;
-			shape-rendering: crispEdges;
-		}
-
-		.bar {
-			fill: steelblue;
-		}
-
-		.x.axis path {
-			display: none;
-		}
-
-		.legend line {
-			stroke: #000;
-			shape-rendering: crispEdges;
-		}
-
-		form {
-			position: absolute;
-			right: 10px;
-			top: 10px;
-		}
-		</style>
-		<script src="http://d3js.org/d3.v3.js" type="text/javascript"></script>
-        <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
-		<title></title>
-	</head>
-	<body>
-		<form>
-		  <label><input type="radio" name="mode" value="bypercent" checked> Percent</label>
-		  <label><input type="radio" name="mode" value="bycount"> Number of Students</label>
-		</form>
-
-		<div id="chart"></div>
-
-		<script type="text/javascript">
+// Script 3
+// Data Visualization III - Stacked Bar Chart
 
 var margin = {top: 20, right: 231, bottom: 140, left: 40},
 	width = 1000 - margin.left - margin.right,
 	height = 800 - margin.top - margin.bottom;
 
-var xscale = d3.scale.ordinal()
-	.rangeRoundBands([0, width], .1);
+var xscale = d3.scaleBand()
+                .range([0, width]);
 
-var yscale = d3.scale.linear()
-	.rangeRound([height, 0]);
+var yscale = d3.scaleLinear()
+	           .range([height, 0]);
 
-var colors = d3.scale.ordinal()
+var colors = d3.scaleOrdinal()
 //	.range(["#63c172", "#ee9952", "#46d6c4", "#fee851", "#98bc9a"]);
 //  .range(["#e34e61", "#ff8360", "#534c86", "#2EC4B6", "#C5D86D"]);
 //  .range(["#1E88E5", "#00a679", "#FFBC42", "#D81159", "#8F2D56"]);
-    .range(["#93d3d9", "#d0879e", "#ff8b6e", "#ffd259", "#fdee70"]);
+    // .range(["#93d3d9", "#d0879e", "#ff8b6e", "#ffd259", "#fdee70"]);
+    .range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]);
 
-var xaxis = d3.svg.axis()
-	.scale(xscale)
-	.orient("bottom");
+var xaxis = d3.axisBottom(xscale);
 
-var yaxis = d3.svg.axis()
-	.scale(yscale)
-	.orient("left")
-	.tickFormat(d3.format(".0%")); // **
+var yaxis = d3.axisLeft(yscale)
+	           .tickFormat(d3.format(".0%")); // **
 
-var svg = d3.select("body").append("svg")
-	.attr("width", width + margin.left + margin.right)
+var stackedBarSVG = d3.select("#stacked-bar-chart")
+    .attr("width", width + margin.left + margin.right)
 	.attr("height", height + margin.top + margin.bottom)
 	.append("g")
 	.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 // load and handle the data
-d3.tsv("data.tsv", function(error, data) {
+d3.tsv("assets/data/data.tsv", function(error, data) {
 
 	// rotate the data
 	var categories = d3.keys(data[0]).filter(function(key) { return key !== "state" && key !== "National"; });
@@ -130,7 +71,7 @@ d3.tsv("data.tsv", function(error, data) {
 	xscale.domain(parsedata.map(function(d) { return d.state; }));
 
 	// add the x axis and rotate its labels
-	svg.append("g")
+	stackedBarSVG.append("g")
 		.attr("class", "x axis")
 		.attr("transform", "translate(0," + height + ")")
 		.call(xaxis)
@@ -142,12 +83,12 @@ d3.tsv("data.tsv", function(error, data) {
 		.style("text-anchor", "start");
 
 	// add the y axis
-	svg.append("g")
+	stackedBarSVG.append("g")
 		.attr("class", "y axis")
 		.call(yaxis);
 
-	// create svg groups ("g") and place them
-	var category = svg.selectAll(".category")
+	// create stackedBarSVG groups ("g") and place them
+	var category = stackedBarSVG.selectAll(".category")
 		.data(parsedata)
 		.enter().append("g")
 		.attr("class", "category")
@@ -157,13 +98,13 @@ d3.tsv("data.tsv", function(error, data) {
 	category.selectAll("rect")
 		.data(function(d) { return d.responses; })
 		.enter().append("rect")
-		.attr("width", xscale.rangeBand())
+		.attr("width", xscale.bandwidth())
 		.attr("y", function(d) { return yscale(d.yp1); })
 		.attr("height", function(d) { return yscale(d.yp0) - yscale(d.yp1); })
 		.style("fill", function(d) { return colors(d.response); });
 
 	// position the legend elements
-	var legend = svg.selectAll(".legend")
+	var legend = stackedBarSVG.selectAll(".legend")
 		.data(colors.domain())
 		.enter().append("g")
 		.attr("class", "legend")
@@ -199,7 +140,7 @@ d3.tsv("data.tsv", function(error, data) {
 		yscale.domain([0, 1]);
 
 		// create the transition
-		var trans = svg.transition().duration(250);
+		var trans = stackedBarSVG.transition().duration(250);
 
 		// transition the bars
 		var categories = trans.selectAll(".category");
@@ -210,7 +151,7 @@ d3.tsv("data.tsv", function(error, data) {
 		// change the y-axis
 		// set the y axis tick format
 		yaxis.tickFormat(d3.format(".0%"));
-		svg.selectAll(".y.axis").call(yaxis);
+		stackedBarSVG.selectAll(".y.axis").call(yaxis);
 	}
 
 	// transition to 'count' presentation
@@ -219,7 +160,7 @@ d3.tsv("data.tsv", function(error, data) {
 		yscale.domain([0, d3.max(parsedata, function(d) { return d.totalresponses; })]);
 
 		// create the transition
-		var transone = svg.transition()
+		var transone = stackedBarSVG.transition()
 			.duration(250);
 
 		// transition the bars (step one)
@@ -232,7 +173,7 @@ d3.tsv("data.tsv", function(error, data) {
 		var transtwo = transone.transition()
 			.delay(350)
 			.duration(350)
-			.ease("bounce");
+			.ease(d3.easeBounce);
 		var categoriestwo = transtwo.selectAll(".category");
 		categoriestwo.selectAll("rect")
 			.attr("y", function(d) { return yscale(d.y1); });
@@ -240,12 +181,8 @@ d3.tsv("data.tsv", function(error, data) {
 		// change the y-axis
 		// set the y axis tick format
 		yaxis.tickFormat(d3.format(".2s"));
-		svg.selectAll(".y.axis").call(yaxis);
+		stackedBarSVG.selectAll(".y.axis").call(yaxis);
 	}
 });
 
 d3.select(self.frameElement).style("height", (height + margin.top + margin.bottom) + "px");
-
-		</script>
-	</body>
-</html>
