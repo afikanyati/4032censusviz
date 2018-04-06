@@ -1,9 +1,12 @@
 // Script 2
 // Data Visualization II - Treemap
+var width = Math.min(960, window.innerWidth*.9),
+    height = Math.min(570, window.innerHeight*.9);
 
-var treemapSVG = d3.select("#treemap"),
-    width = Math.min(+treemapSVG.attr("width"), window.innerWidth*.9),
-    height = Math.min(+treemapSVG.attr("height"), window.innerHeight*.9);
+var treemapSVG = d3.select("#treemap")
+    .attr("width", width)
+    .attr("height", height);
+
 
 var fader = function(color) { return d3.interpolateRgb(color, "#fff")(0.2); },
     color = d3.scaleOrdinal().range(["#98abc5", "#f68b1e", "#a05d56", "#6b486b"]),
