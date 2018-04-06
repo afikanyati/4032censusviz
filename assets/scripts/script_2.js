@@ -42,12 +42,13 @@ d3.json("assets/data/us.json", function(error, data) {
       .attr("xlink:href", function(d) { return "#" + d.data.id; });
 
   cell.append("text")
+        .attr("class", "tree-text")
       .attr("clip-path", function(d) { return "url(#clip-" + d.data.id + ")"; })
     .selectAll("tspan")
       .data(function(d) { return d.data.name.split(/(?=[A-Z][^A-Z])/g); })
     .enter().append("tspan")
-      .attr("x", 4)
-      .attr("y", function(d, i) { return 13 + i * 10; })
+      .attr("x", 5)
+      .attr("y", function(d, i) { return 17 + i * 15; })
       .text(function(d) { return d; });
 
   cell.append("title")
