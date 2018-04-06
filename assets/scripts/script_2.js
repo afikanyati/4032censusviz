@@ -71,6 +71,7 @@ d3.json("assets/data/us.json", function(error, data) {
 });
 
 function percent(d) {
+        console.log(d.name, d["Total College"]/d["Population"]);
   return d["Total College"]/d["Population"];
 }
 
