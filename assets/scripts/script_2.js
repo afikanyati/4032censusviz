@@ -64,7 +64,7 @@ d3.json("assets/data/us.json", function(error, data) {
     cell.transition()
         .duration(750)
         .attr("transform", function(d) { return "translate(" + d.x0 + "," + d.y0 + ")"; })
-      .select("rect")
+        .select("rect")
         .attr("width", function(d) { return d.x1 - d.x0; })
         .attr("height", function(d) { return d.y1 - d.y0; });
   }
