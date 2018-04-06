@@ -124,7 +124,7 @@ d3.tsv("assets/data/data.tsv", function(error, data) {
 		.text(function(d) { return d; });
 
 	// animation
-	d3.selectAll("input").on("change", handleFormClick);
+	d3.selectAll("#stack-form input").on("change", handleFormClick);
 
 	function handleFormClick() {
 		if (this.value === "bypercent") {

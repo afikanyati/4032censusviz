@@ -53,13 +53,11 @@ d3.json("assets/data/us.json", function(error, data) {
   cell.append("title")
       .text(function(d) { return d.data.id + "\n" + format(d.value); });
 
-  d3.selectAll("input")
-      .data([sumBySize, sumByCount], function(d) { return d ? d.name : this.value; })
+  d3.selectAll("#tree-form input")
+      .data([sumBySize, percent], function(d) { return d ? d.name : this.value; })
       .on("change", changed);
 
   function changed(sum) {
-    timeout.stop();
-
     treemap(root.sum(sum));
 
     cell.transition()
@@ -71,8 +69,8 @@ d3.json("assets/data/us.json", function(error, data) {
   }
 });
 
-function sumByCount(d) {
-  return d["Total College"];
+function percent(d) {
+  return d["Total College"]/d["Population"];
 }
 
 function sumBySize(d) {

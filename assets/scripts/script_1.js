@@ -6,8 +6,8 @@ var donut = donutChart()
         .height(450)
         .cornerRadius(0) // sets how rounded the corners are on each slice
         .padAngle(0.005) // effectively dictates the gap between slices
-        .variable('Probability')
-        .category('Species');
+        .variable('Percent')
+        .category('Education Level');
 
     d3.tsv('assets/data/species.tsv', function(error, data) {
         if (error) throw error;
@@ -20,13 +20,13 @@ function donutChart() {
     var width,
         height,
         margin = {top: 10, right: 10, bottom: 10, left: 10},
-        colour = d3.scaleOrdinal(d3.schemeCategory20c), // colour scheme
+        colour = d3.scaleOrdinal().range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]), // colour scheme
         variable, // value in data that will dictate proportions on chart
         category, // compare data by
         padAngle, // effectively dictates the gap between slices
         floatFormat = d3.format('.4r'),
         cornerRadius, // sets how rounded the corners are on each slice
-        percentFormat = d3.format(',.2%');
+        percentFormat = d3.format(',.1%');
 
     function chart(selection){
         selection.each(function(data) {
@@ -168,9 +168,9 @@ function donutChart() {
                     i   = 0;
 
                 for (var key in data.data) {
-
+                    console.log(data.data);
                     // if value is a number, format it as a percentage
-                    var value = (!isNaN(parseFloat(data.data[key]))) ? percentFormat(data.data[key]) : data.data[key];
+                    var value = key == "Percent" ? percentFormat(data.data[key]) : data.data[key];
 
                     // leave off 'dy' attr for first tspan so the 'dy' attr on text element works. The 'dy' attr on
                     // tspan effectively imitates a line break.
