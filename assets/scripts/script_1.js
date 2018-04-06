@@ -3,7 +3,7 @@
 
 var donut = donutChart()
         .width(960)
-        .height(500)
+        .height(450)
         .cornerRadius(0) // sets how rounded the corners are on each slice
         .padAngle(0.005) // effectively dictates the gap between slices
         .variable('Probability')

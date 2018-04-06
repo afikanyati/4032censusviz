@@ -128,3 +128,40 @@ polyline{
     font-size: 0.9em;
     font-style: italic;
 }
+
+#pie-chart {
+    display: block;
+    margin: 0 auto;  
+}
+
+#treemap {
+    display: block;
+    margin: 0 auto;  
+}
+
+#stacked-bar-chart {
+    display: block;
+    margin: 0 auto; 
+/*    padding-left: 136px;*/
+}
+
+.paragraph {
+    width: 800px;
+    display: block;
+    margin: 0 auto;  
+    font-size: 1.25em;
+}
+
+.title {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.subtitle{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.text{
+    text-align: center;
+}

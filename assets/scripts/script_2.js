@@ -57,12 +57,7 @@ d3.json("assets/data/us.json", function(error, data) {
       .data([sumBySize, sumByCount], function(d) { return d ? d.name : this.value; })
       .on("change", changed);
 
-  var timeout = d3.timeout(function() {
-    d3.select("input[value=\"sumByCount\"]")
-        .property("checked", true)
-        .dispatch("change");
-  }, 2000);
-
+  
   function changed(sum) {
     timeout.stop();
 
