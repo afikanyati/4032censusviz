@@ -12,11 +12,12 @@ var yscale = d3.scaleLinear()
 	           .range([height, 0]);
 
 var colors = d3.scaleOrdinal()
-//	.range(["#63c172", "#ee9952", "#46d6c4", "#fee851", "#98bc9a"]);
-//  .range(["#e34e61", "#ff8360", "#534c86", "#2EC4B6", "#C5D86D"]);
-//  .range(["#1E88E5", "#00a679", "#FFBC42", "#D81159", "#8F2D56"]);
-    // .range(["#93d3d9", "#d0879e", "#ff8b6e", "#ffd259", "#fdee70"]);
-    .range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]);
+//    .range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]);
+//    .range(["#177E89", "#0a5971", "#0f436f", "#444b80", "#664d83", "#95457c", "#9a295d"]);
+//.range(["#0a5971", "#177E89", "#4b8e77", "#a9ad70", "#ccb221", "#cb8b25", "#DB3A34"]);
+//.range(["#ef9999", "#e8b9ae", "#d8cdb3", "#90afa2", "#6f94a3", "#607495", "#4e5684"]);
+.range(["#0FA3B1", "#73c3bf", "#a1d8c8", "#cbe0a7", "#f2db84", "#f7af72", "#FF9B42"]);
+
 
 var xaxis = d3.axisBottom(xscale);
 

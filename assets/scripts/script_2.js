@@ -9,7 +9,7 @@ var treemapSVG = d3.select("#treemap")
 
 
 var fader = function(color) { return d3.interpolateRgb(color, "#fff")(0.2); },
-    color = d3.scaleOrdinal().range(["#98abc5", "#f68b1e", "#a05d56", "#6b486b"]),
+    color = d3.scaleOrdinal().range(["#a1d8c8", "#0FA3B1", "#FF9B42", "#f2db84"]),
     format = d3.format(",d");
 
 var treemap = d3.treemap()
