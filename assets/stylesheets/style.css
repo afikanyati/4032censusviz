@@ -24,6 +24,51 @@
 	-ms-box-sizing: border-box;
 }
 
+
+header {
+  height:36px;
+  z-index:10;
+}
+
+header h1 {
+  position: absolute;
+  top: 72px; 
+  left: 50px;
+  color: #fff;
+}
+
+.fixed-header {
+  position: fixed;
+  top:0; left:0;
+  width: 100%; 
+}
+
+nav {
+  width:100%;
+  height:60px;
+  background: #292f36;
+  postion:fixed;
+  z-index:10;
+}
+
+nav ul { 
+  list-style-type: none;
+  margin: 0 auto;
+  padding-left:0;
+  text-align:right;
+  width: 960px; 
+  max-width: 100%;
+}
+nav ul li { 
+  display: inline-block; 
+  line-height: 60px;
+  margin-left: 10px;
+}
+nav ul li a {
+  text-decoration: none; 
+  color: #a9abae;
+}
+
 body {
     font-size: 14px;
     font-family: "Muli", "Gill Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;

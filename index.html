@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
     <meta charset="UTF-8">
     <title>Educational Attainment in the United States</title>
@@ -7,15 +8,24 @@
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
+  <header>
+       <nav>
+    <ul>
+      <li><a href="#national" >National</a></li>
+      <li><a href="#regional">Regional</a></li>
+      <li><a href="#state">State-Level</a></li>
+    <ul>
+        </nav>
+    </header>
 <body>
     <h1 class="title">Educational Attainment in the United States</h1>
     <h3 class="personnel">By <span>Hayley Ye</span>, <span>Heather Nelson</span>, <span>Chloe Wang</span> and <span>Afika Nyati</span>.</h3>
 <!--    <p class="paragraph">The following data visualization follows Education Attainment in the United States over a period of 10 years, and seeks to visually illucidate and uncover trends and patterns in the associated Census Data. Our project looks at Education Attainment in the United States of America during a ten-year period various scale levels and education levels. The scales of interest explored in our data visualization are the national level, regional level, and state level, and in exploring these distinct scales we seek to expose relations at lower levels that might contribute towards trends at larger levels.</p>-->
-    <p class='paragraph'>The following data visualizations follows Education Attainment in the United States and seeks to visually illucidate and uncover trends and patterns within the Census data. Our project breaks down this large category of Education by looking at various populations and the numbers of people within the education system in each level of schooling from nursery school to graduate school. The scales of interest explored in our data visualization are the national level, regional level, and state level. In exploring these distinct scales, we seek to expose relations at lower levels that might contribute towards trends at larger levels. Specifically, we are interested in higher education in the United States — how many people pursue a Masters degree, in what states and regions is pursuing a Masters degree most common, does gender play a role? </p>
-    <h2 class="subtitle">Nation-Wide Education Level of Population in Schooling</h2>
+    <p class='paragraph'>The following data visualizations follows Education Attainment in the United States and seeks to visually illucidate and uncover trends and patterns within the Census data. Our project breaks down this large category of Education by looking at various populations and the numbers of people within the education system in each level of schooling from nursery school to graduate school. The scales of interest explored in our data visualization are the national level, regional level, and state level. In exploring these distinct scales, we seek to expose relations at lower levels that might contribute towards trends at larger levels. Specifically, we are interested in higher education in the United States — how many people pursue a Masters degree, <a name="national"></a>in what states and regions is pursuing a Masters degree most common, does gender play a role? </p>
+           <h2 class="subtitle">Nation-Wide Education Level of Population in Schooling</h2>
 	<p class="paragraph">First, we decided to take a look at the national level to get a sense of how many people in the United States are where in the Education System. We used data from TKTKKTTKKT 2016, and out of the 83,054,762 people within the American education system, 4,165,602 were in graduate school. This makes up 5% of the students in America, which compares to the number of students in Nursey school, which is only 1 year long.</p>
-    <svg id="pie-chart" width="960" height="450"></svg>
-    <p></p>
+    <svg id="pie-chart" width="960" height="450"></svg><a name="regional"></a>
+           <p></br></br></p>
     <h2 class="subtitle">Educational Attainment: Region-level Breakdown </h2>
 	<p class="paragraph">Next, we looked at region-level trends of enrollment in graduate degree programs. Here, we see which regions have the most graduate students, by count and by percent. We also use this visualization to understand if there is a gender bias in Masters degree programs, and whether or not it differs from region to region and state by state.</p>
     <form id="tree-form">
@@ -33,8 +43,8 @@
 
     </form>
 	<p></p>
-    <svg id="treemap"></svg>
-    <p></p>
+    <svg id="treemap"></svg><a name="state"></a>
+    <p></br></br></p>
     <h2 class="subtitle">Educational Attainment: State-level Breakdown</h2>
 	<p class="paragraph">After looking at the region level statistics, we were interested in breaking the data down further: to the state level. This visualization allows us to see more specifically which states have more people enrolled in which part of the education system during 2016, which we are assuming is similar data from year to year. As you can see, the District of Columbia (DC) has the largest percent of college students, undergraduate and graduate, which can be attributed to its large number of universities (20) and its small population (less than 700,000). Other states like Maryland and Massachusetts also have a large percentage of graduate students.</p>
     <form id="stack-form">
@@ -45,21 +55,57 @@
             
             <input type="radio" id="radio2" name="mode" value="bycount">
             <label for="radio2"># of Students</label>
-            
-
-      
-        </div>
+    </div>
     </form>
     <div>
         <svg id="stacked-bar-chart"></svg>
     </div>
+    
+    
     <p></p>
 	<h2 class="subtitle">Discussion: What We Learned and Further Questions</h2>
 	<p class="paragraph">From these three visualizations, we get a sense of the educational landscape in America. From nursery all the way through graduate school, we now understand how many people are in the education system and where. It is clear that only a small percentage of the population pursues Masters degrees, only a fraction of undergraduate students move on to graduate school, and that these numbers and percentages vary from region to region and state to state, but it is not clear why. From here, it would be interesting to observe this data alongside visualizations of the number of Universities within each state, and perhaps an income bracket breakdown for each state. With that information, we could further infer potential correlations, which might shed light more disparities and why different states have more graduate students compared to others.</p>
 	
 <script src="https://d3js.org/d3.v4.min.js"></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src="assets/scripts/script_1.js"></script>
 <script src="assets/scripts/script_2.js"></script>
 <script src="assets/scripts/script_3.js"></script>
+<script>
+    $(window).scroll(function(){
+    if ($(window).scrollTop() >= 300) {
+       $('nav').addClass('fixed-header');
+    }
+    else {
+       $('nav').removeClass('fixed-header');
+    }
+});
+
+/* scrollTop() >= 240
+   Should be equal the the height of the header
+ */
+</script>
+
+<!--
+<script>
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+// Get the header
+var header = document.getElementById("myHeader");
+
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}           
+</script>
+-->
 </body>
 </html>
