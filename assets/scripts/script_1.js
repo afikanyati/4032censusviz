@@ -168,7 +168,7 @@ function donutChart() {
                     i   = 0;
 
                 for (var key in data.data) {
-                    console.log(data.data);
+                    console.log(key, data.data);
                     // if value is a number, format it as a percentage
                     var value = key == "Percent" ? percentFormat(data.data[key]) : data.data[key];
 

@@ -110,7 +110,7 @@ d3.tsv("assets/data/data.tsv", function(error, data) {
 		.data(colors.domain())
 		.enter().append("g")
 		.attr("class", "legend")
-		.attr("transform", function(d, i) { return "translate(20," + ((height - 18) - (i * 20)) + ")"; });
+		.attr("transform", function(d, i) { return "translate(57," + ((height-422) - (i * 20)) + ")"; });
 
 	legend.append("rect")
 		.attr("x", width - 18)

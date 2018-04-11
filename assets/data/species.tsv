@@ -1,8 +1,8 @@
-Education Level	Percent	Count
-Nursery	0.06	5013351
-Kindergarten	0.05	4221320
-Elementary: 1-4	0.2	16511632
-Elementary: 5-8	0.2	16675078
-High School: 9-12	0.21	17176546
-Undergraduate	0.23	19291233
-Graduate	0.05	4165602
+Education Level	Percent	Count	Age Range
+Nursery	0.06	5,013,351	4 years old
+Kindergarten	0.05	4,221,320	5 years old
+Elementary: 1-4	0.2	16,511,632	6-9 years old
+Elementary: 5-8	0.2	16,675,078	10-13 years old
+High School: 9-12	0.21	17,176,546	14-18 years old
+Undergraduate	0.23	19,291,233	18-22 years old
+Graduate	0.05	4,165,602	22+
