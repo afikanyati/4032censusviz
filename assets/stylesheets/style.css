@@ -29,6 +29,10 @@ body {
     font-family: "Muli", "Gill Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+text{
+    font-family: "Muli", "Gill Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 a, a:visited, a:hover {
 	text-decoration: none;
 }
