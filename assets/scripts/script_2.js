@@ -128,11 +128,6 @@ d3.json("assets/data/us.json", function(data) {
                     '<p class="title"> ' + d.data.name + '</p>' +
                     '<p class="value">' + formatNumber(d.value) + '</p>';
 
-                if (d.parent.data.name !== "United States of America") {
-                    html += '<p class="extra">Males (18-24yrs): ' + d.data["Percent College - Male"] + '%</p>';
-                    html += '<p class="extra">Females (18-24yrs): ' + d.data["Percent College - Female"] + '%</p>';
-                }
-
                 return html;
             })
             .attr("class", "textdiv"); //textdiv class allows us to style the text easily with CSS
@@ -175,6 +170,39 @@ d3.json("assets/data/us.json", function(data) {
                 transitioning = false;
             });
         }
+
+        document.forms[0].addEventListener("change", function() {
+            treeSumSortType = document.forms[0].elements["treeSum"].value;
+            treemap(root
+            .sum(function (d) {
+                if (treeSumSortType == "number") {
+                    return d["Total College"];
+                } else if (treeSumSortType == "percent") {
+                    return d["Percent College"];
+                } else if (treeSumSortType == "male") {
+                    return d["Percent College - Male"];
+                } else {
+                    return d["Percent College - Female"];
+                }
+
+            })
+            .sort(function (a, b) {
+                if (treeSumSortType == "number") {
+                    return b.height - a.height || b["Total College"] - a["Total College"];
+                } else if (treeSumSortType == "percent") {
+                    return b.height - a.height || b["Percent College"] - a["Percent College"];
+                } else if (treeSumSortType == "male") {
+                    return b.height - a.height || b["Percent College - Male"] - a["Percent College - Male"]
+                } else {
+                    return b.height - a.height || b["Percent College - Female"] - a["Percent College - Female"]
+                }
+
+            })
+        );
+
+        display(root);
+        });
+
         return g;
     }
 
@@ -240,28 +268,4 @@ d3.json("assets/data/us.json", function(data) {
             })
             .join(sep);
     }
-
-    document.forms[0].addEventListener("change", function() {
-        treeSumSortType = document.forms[0].elements["treeSum"].value;
-        treemap(root
-        .sum(function (d) {
-            if (treeSumSortType == "number") {
-                return d["Total College"];
-            } else {
-                return d["Percent College"];
-            }
-
-        })
-        .sort(function (a, b) {
-            if (treeSumSortType == "number") {
-                return b.height - a.height || b["Total College"] - a["Total College"];
-            } else {
-               return b.height - a.height || b["Percent College"] - a["Percent College"]
-            }
-
-        })
-    );
-
-    display(root);
-    });
 });
