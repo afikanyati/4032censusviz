@@ -19,8 +19,16 @@
     <h2 class="subtitle">Educational Attainment: Region-level Breakdown </h2>
 	<p class="paragraph">Next, we looked at region-level trends of enrollment in graduate degree programs. Here, we see which regions have the most graduate students, by count and by percent. We also use this visualization to understand if there is a gender bias in Masters degree programs, and whether or not it differs from region to region and state by state.</p>
     <form id="tree-form">
-      <label><input type="radio" name="mode" value="sumBySize" checked> # pursuing Masters degree</label>
-      <label> <input type="radio" name="mode" value="percent"> % pursuing Masters degree</label>
+        <div class="radio-toolbar">
+      
+            <input type="radio" id="mode3" name="mode" value="sumBySize" checked>
+            <label for="mode3"> # pursuing Masters degree</label>
+            
+            <input type="radio" id="mode4" name="mode" value="percent">
+            <label for="mode4">% pursuing Masters degree</label>
+            
+        </div>
+     
     </form>
 	<p></p>
     <svg id="treemap"></svg>
@@ -28,8 +36,17 @@
     <h2 class="subtitle">Educational Attainment: State-level Breakdown</h2>
 	<p class="paragraph">After looking at the region level statistics, we were interested in breaking the data down further: to the state level. This visualization allows us to see more specifically which states have more people enrolled in which part of the education system during 2016, which we are assuming is similar data from year to year. As you can see, the District of Columbia (DC) has the largest percent of college students, undergraduate and graduate, which can be attributed to its large number of universities (20) and its small population (less than 700,000). Other states like Maryland and Massachusetts also have a large percentage of graduate students.</p>
     <form id="stack-form">
-      <label><input type="radio" name="mode" value="bypercent" checked> % of Students</label>
-      <label><input type="radio" name="mode" value="bycount"> # of Students</label>
+        <div class="radio-toolbar">
+      
+            <input type="radio" id="radio1" name="mode" value="bypercent" checked>
+            <label for="radio1"> % of Students</label>
+            
+            <input type="radio" id="radio2" name="mode" value="bycount">
+            <label for="radio2"># of Students</label>
+            
+
+      
+        </div>
     </form>
     <div>
         <svg id="stacked-bar-chart"></svg>
