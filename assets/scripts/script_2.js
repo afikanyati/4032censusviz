@@ -7,7 +7,7 @@ var divWidth = obj.offsetWidth;
 
 var margin = {top: 30, right: 0, bottom: 20, left: 0},
     width = divWidth,
-    height = 600 - margin.top - margin.bottom,
+    height = 500 - margin.top - margin.bottom,
     formatNumber = d3.format(","),
     transitioning;
 
