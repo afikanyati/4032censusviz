@@ -2,7 +2,7 @@
 // Data Visualization III - Stacked Bar Chart
 
 var margin = {top: 10, right: 231, bottom: 90, left: 236},
-	width = .9*window.innerWidth - margin.left - margin.right,
+	width = .97*window.innerWidth - margin.left - margin.right,
 	height = Math.min(700, window.innerHeight*.9) - margin.top - margin.bottom;
 
 var xscale = d3.scaleBand()
