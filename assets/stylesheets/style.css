@@ -75,7 +75,7 @@ body {
 }
 
 text{
-    font-family: "Muli", "Gill Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Muli", "Gill Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !IMPORTANT;
 }
 
 label{
